@@ -71,20 +71,45 @@
                     <div class="swiper-slide"><img src="Portugol.svg" alt="Livro sobre portugol"></div>
                     <div class="swiper-slide"><img src="Acessibilidade.svg" alt="livro sobre acessibilidade"></div>
                 </div>
+
                 <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
-  
-                <!-- If we need scrollbar -->
-               <div class="swiper-scrollbar"></div>
             </div>
-        </section>    
-       
+           
+ <div class="card">
+            <!-- 1° linha -->
+            <div class="card__descrição">
+                <!-- 1° coluna -->
+                <div class="descrição">
+                       <h3 class="descrição__título">Talvez vocẽ também se interresse por...</h3>
+                       <h2 class="descrição__título-livro">Angular 11 e Firebase</h2>
+                       <p class="descrição__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                </div>
+                <!--2° coluna -->
+                  <img src="img/Angular.svg" class="descrição__imagem"> 
+             </div>            
+
+             <!-- 2°linha -->
+             <div class="card__botões"> 
+                <ul class="botões"> 
+                    <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livros"></li>
+                    <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar carrinho de compra"></li>
+                </ul>
+             </div>
+ </div>
+ 
+ <ction> 
+
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
         <script>
             const swiper = new Swiper('.swiper', {
-                spaceBetween: 100,
+                spaceBetween: 10,
                 slidesPerView: 3,
+                pagination: {
+                    el: '.swiper-pagination', 
+                    type: 'bullets',
+                },
             });
         </script>
 </body>
